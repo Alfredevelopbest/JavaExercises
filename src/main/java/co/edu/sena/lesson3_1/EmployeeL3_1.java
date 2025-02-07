@@ -20,6 +20,8 @@ public class EmployeeL3_1 {
 
     }
 
+    Employee employee = new Employee;
+
     public void setName(String name){
         this.name = name;
     }
@@ -44,12 +46,15 @@ public class EmployeeL3_1 {
         salary += increase;
     }
 
+    @Override
+    public String toString(){
+        return ("{ Employee Id: " + empId +"\nName: " + name + 
+                "\nSSN: " + ssn + "\nSalary: " + salary + "}");
+    }
+
     public void printEmployee(){
-        System.out.println();
-        System.out.println("Employee Id: " + getEmpId());
-        System.out.println("Employee name " + getName());
-        System.out.println("Employee social seucure: " + getSsn());
-        System.out.println("Employee salary: "+
+        
+        System.out.println(employee.toString());
                 NumberFormat.getCurrencyInstance().format((double) getSalary()));
 
     }
