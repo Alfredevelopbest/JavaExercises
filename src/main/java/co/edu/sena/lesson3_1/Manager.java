@@ -10,8 +10,8 @@ public class Manager extends EmployeeL3_1{
     }
 
 
-    public void deptName(){
-        deptName = deptName;
+    public void setDeptName(String deptName){
+        this.deptName = deptName;
     }
 
     public String getDeptName(){
