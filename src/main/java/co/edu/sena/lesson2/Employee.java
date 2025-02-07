@@ -1,10 +1,10 @@
 package sena.lesson2;
 
 public class Employee {
-    int id;
-    String name;
-    String ssid;
-    double salary;
+    private int id;
+    private String name;
+    private String ssid;
+    private double salary;
 
     public Employee(int id, String name, String ssid, double salary){
         this.id = id;
@@ -44,5 +44,10 @@ public class Employee {
     public void setSalary(double salary){
         this.salary = salary;
     }
+    
+    @Override
+    public String toString(){
+        return ("{ Id employee: " + id + "Name: " + name + 
+               "ssid: ") + ssid + "Salary:" + salary "}";
 
 }
